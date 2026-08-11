@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="#101F34" />
+  <path d="M30 25 H42 V75 H30 Z" fill="#8DC5C0" />
+  <path d="M42 50 L68 25 H80 L52 50 Z" fill="#8DC5C0" />
+  <path d="M52 50 L80 75 H67 L42 50 Z" fill="#B92E68" />
+  <polygon points="70,18 80,18 75,26" fill="#F7BD50" />
+</svg>

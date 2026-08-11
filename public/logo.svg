@@ -1,0 +1,33 @@
+<svg width="320" height="90" viewBox="0 0 320 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="90" rx="12" fill="#101F34" />
+
+  {/* 3D Geometric Hexagon Emblem */}
+  <g transform="translate(15, 5)">
+    <path d="M40 8 L10 24 V58 L40 74 L20 62 V30 Z" fill="url(#leftWallGrad)" />
+    <path d="M40 8 L68 24 L50 35 L24 19 Z" fill="#E6F5F2" />
+    <path d="M40 74 L10 58 L28 48 L48 59 Z" fill="#C0E0D7" />
+    <polygon points="10,58 18,62 10,50" fill="#B92E68" />
+    <polygon points="68,24 58,19 68,15" fill="#B92E68" />
+    <polygon points="68,58 58,62 68,66" fill="#F7BD50" />
+
+    {/* Central K Stem & Arms */}
+    <path d="M30 22 H40 V60 H30 Z" fill="#FFFFFF" />
+    <path d="M40 38 L72 12 L52 32 Z" fill="#FFFFFF" />
+    <path d="M40 38 L72 12 L75 20 L48 44 Z" fill="#C0E0D7" />
+    <path d="M40 42 L70 72 L50 62 Z" fill="#8DC5C0" />
+    <path d="M40 42 L70 72 L62 78 L40 52 Z" fill="#4A8782" />
+  </g>
+
+  {/* Brand Typography */}
+  <text x="95" y="36" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="1.5">KAMMENIX</text>
+  <text x="95" y="54" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="700" font-size="14" fill="#8DC5C0" letter-spacing="2">NIG. LIMITED</text>
+  <text x="95" y="70" font-family="'Inter', Arial, sans-serif" font-weight="500" font-size="10" fill="#C0E0D7" letter-spacing="0.5">EXCELLENCE, PROFESSIONALISM &amp; TRUST</text>
+
+  <defs>
+    <linearGradient id="leftWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#C0E0D7" />
+      <stop offset="60%" stopColor="#8DC5C0" />
+      <stop offset="100%" stopColor="#559993" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #101F34;
+    --color-navy-dark: #0A1424;
+    --color-navy-light: #1A2F4C;
+    --color-mint: #8DC5C0;
+    --color-mint-dark: #6CA5A0;
+    --color-mint-light: #C0E0D7;
+    --color-mint-subtle: #F0F8F6;
+    --color-magenta: #B92E68;
+    --color-magenta-hover: #982153;
+    --color-gold: #F7BD50;
+    --color-gold-light: #FDF3DB;
+    --color-offwhite: #F8F6F6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--color-offwhite);
+    color: #1E293B;
+    overflow-x: hidden;
+  }
+}
+
+/* CUSTOM BRAND UTILITIES */
+.bg-navy { background-color: #101F34; }
+.bg-navy-dark { background-color: #0A1424; }
+.bg-navy-light { background-color: #1A2F4C; }
+.text-navy { color: #101F34; }
+.border-navy { border-color: #101F34; }
+
+.bg-mint { background-color: #8DC5C0; }
+.bg-mint-light { background-color: #C0E0D7; }
+.bg-mint-subtle { background-color: #F0F8F6; }
+.text-mint { color: #8DC5C0; }
+.text-mint-dark { color: #4A8782; }
+.border-mint { border-color: #8DC5C0; }
+
+.bg-magenta { background-color: #B92E68; }
+.text-magenta { color: #B92E68; }
+.border-magenta { border-color: #B92E68; }
+
+.bg-gold { background-color: #F7BD50; }
+.bg-gold-light { background-color: #FDF3DB; }
+.text-gold { color: #F7BD50; }
+.border-gold { border-color: #F7BD50; }
+
+.bg-offwhite { background-color: #F8F6F6; }
+
+/* GLASSMORPHISM & SHADOWS */
+.glass-nav {
+  background: rgba(16, 31, 52, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(141, 197, 192, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(141, 197, 192, 0.2);
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 30px -10px rgba(16, 31, 52, 0.08);
+}
+
+.custom-shadow-lg {
+  box-shadow: 0 20px 40px -15px rgba(16, 31, 52, 0.12);
+}
+
+.glow-mint {
+  box-shadow: 0 0 25px rgba(141, 197, 192, 0.35);
+}
+
+/* CUSTOM ANIMATIONS */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
